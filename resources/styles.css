@@ -1,0 +1,22 @@
+.background {
+  viewport-fill: black;
+}
+
+.light {
+  width: 50%;
+  height: 50%;
+}
+
+.btn {
+  opacity: 0;
+  width: 50%;
+  height: 50%;
+}
+
+text {
+  font-family: Tungsten-Medium;
+  font-weight: bold;
+  text-anchor: middle;
+  text-length: 4;
+  fill: white;
+}

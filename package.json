@@ -1,0 +1,15 @@
+{
+  "fitbit": {
+    "appUUID": "6a5c2272-66cf-4082-b9cf-c84231b80289",
+    "appType": "app",
+    "appDisplayName": "Jacadi",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#2196f3",
+    "requestedPermissions": [],
+    "i18n": {
+      "en": {
+        "name": "Jacadi"
+      }
+    }
+  }
+}

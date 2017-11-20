@@ -1,0 +1,39 @@
+<svg class="background">
+  
+  <defs>
+    <symbol id="light" opacity="0">
+      <rect fill="white" height="100%" width="100%"/>
+      <animate attributeName="opacity" begin="enable" end="disable" from="0" to="1" dur="0.2" final="restore" />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="score">
+      <text id="label" x="50%" y="50%+2" font-size="50"/>
+      <animate attributeName="y" begin="enable" end="disable" from="0" to="12" dur="1" />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="highscore">
+      <text id="label" x="50%" y="50%+33" font-size="30"/>
+      <animate attributeName="opacity" begin="enable" end="disable" from="1" to="0" dur="0.5" />
+    </symbol>
+  </defs>
+  
+  <image href="lightbkg.png"/>
+  
+  <use href="#light" class="light" x="0"   y="0"   />
+  <use href="#light" class="light" x="0"   y="50%" />
+  <use href="#light" class="light" x="50%" y="0"   />
+  <use href="#light" class="light" x="50%" y="50%" />
+  
+  <image href="button.png"/>
+  
+  <use id="score"     href="#score"     />
+  <use id="highscore" href="#highscore" />
+  
+  <rect id="btn0" pointer-events="visible" class="btn" x="0"   y="0"   />
+  <rect id="btn1" pointer-events="visible" class="btn" x="0"   y="50%" />
+  <rect id="btn2" pointer-events="visible" class="btn" x="50%" y="0"   />
+  <rect id="btn3" pointer-events="visible" class="btn" x="50%" y="50%" />
+  
+</svg>
