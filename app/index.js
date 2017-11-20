@@ -58,14 +58,14 @@ function nextLevel() {
   
   scoreLbl.text = sequence.length - 1;
   
-  if(prefs.preferences.record < sequence.length - 1) {
+  if(prefs.preferences.record == sequence.length - 1) {
+    // Trigger labels animation
+    highscorebreaking = true;
+    score.animate("enable");
+    highscore.animate("enable");
+  }
+  else if(highscorebreaking) {
     prefs.preferences.record = sequence.length - 1;
-    if(!highscorebreaking) {
-      // Trigger labels animation
-      highscorebreaking = true;
-      score.animate("enable");
-      highscore.animate("enable");
-    }
   }
   
   sequenceIndex = 0;
